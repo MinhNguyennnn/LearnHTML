@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Width Height Styles</title>
+        <meta charset='utf-8'>
+
+        <style>
+            img {
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <p>the image below uses the width and height attribute and will be overrides by stylesheet and sets the width to 100%</p>
+        <img src='./img/html5.gif' alt='HTML5 Icon' width='128' height='128'>
+        <p>the image below used the style attribute, where the width is set to 128 pixels which overrides the stylesheet</p>
+        <img src='./img/html5.gif' alt='HTML5 Icon' style='width:128px; height:128px;'>
+        <hr>
+        
+        <p>you can set the image from another server</p>
+        <p><a href="https://www.w3schools.com/images/w3schools_green.jpg">"https://www.w3schools.com/images/w3schools_green.jpg"</a></p>
+        <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt='W3School.com' style='width:128px; height:140px;'>
+        <hr>
+        
+        <h2 style='text-align: center;'>You can set animated img</h2>
+        <p>The gif standard allows moving images.</p>
+        <img src="./img/programming.gif" alt='computer man' style='width:48px; height:48px;'>
+        <hr>
+
+        <h2 style='text-align:center;'>Floating Image</h2>
+        <p><strong>Float the image to the right:</strong></p>
+        <p>
+            <img src="./img/smiley.gif" alt='smiley face' style='float:right; width:42px; height:42px'>
+            A paragraph with a floating image. A paragraph with a floating image. A paragraph with a floating image
+            A paragraph with a floating image.  A paragraph with a floating image. A paragraph with a floating image
+            A paragraph with a floating image. A paragraph with a floating image
+        </p>
+
+        <p>
+            <img src="./img/smiley.gif" alt='smiley face' style="width:48px; height:48px; float:left;">
+            A paragraph with a floating image. A paragraph with a floating image. A paragraph with a floating image
+            A paragraph with a floating image.  A paragraph with a floating image. A paragraph with a floating image
+            A paragraph with a floating image. A paragraph with a floating image
+        </p>
+    </body>
+</html>
