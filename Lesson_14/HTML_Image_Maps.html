@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML IMAGE MAPS</title>
+        <meta charset='utf-8'>
+    </head>
+    <body>
+        <img src='./img/workplace.jpg' alt='Workplace' usemap='#workmap'>
+        
+        <map name='workmap'>
+            <area shape="rect" coords="34, 44, 270, 350" href="computer.html" target="_blank">
+            <area shape="circle" coords='337, 300, 44' href="coffee.html" target="_blank"> 
+            <area shape="rect" coords='293, 175, 333, 245' href="mobilephone.html" target="_blank">
+            <!-- if you want to use event onClick, you must comment line code use link href-->
+            <area shape="circle" coords='337, 300, 44' onClick="myFunction()" target="_blank">
+        </map>
+        <script>
+            function myFunction() {
+                alert('you clicked the coffe cup!!!!')
+            }
+        </script>
+    </body>
+</html>
