@@ -1,0 +1,150 @@
+<!doctype html>
+<html>
+    <head>
+        <title>HTML Table</title>
+        <meta charset='utf-8'>
+
+        <style>
+            body {
+                background-color: powderblue;
+            }
+            h2 {
+                color:salmon;
+                text-align:center;
+            }
+            h2:hover {
+                color: red;
+            }
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse; /*thu gọn viền của table*/
+            }
+            th, td {
+                padding: 15px;
+            }
+            th {
+                text-align: left;
+            }
+            table {
+                width: 100%;
+                border-spacing: 50px; /*If the table has collapsed borders, border-spacing has no effect.*/
+            }
+
+            table#t01 {
+                width: 100%;
+                border: 1px solid white;
+            }
+            table#t01 tr:nth-child(even){
+                background-color: #eee;
+            }
+            table#t01 tr:nth-child(odd){
+                background-color: #fff;
+            }
+            table#t01 th{
+                color: white;
+                background-color:black;
+            }
+        </style>
+    </head>
+    <body>
+        <table style='width:100%;'>
+            <tr>
+                <th colspan="2">
+                    Firstname <br> <br>
+                    if you want to merge 2 columns in one like this <br>
+                    just use attribute bolspan='(how many column you want to merge)'
+                </th>
+                <th>Lastname</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td colspan="2">Minh</td>
+                <td>Tom</td>
+                <td>21</td>
+            </tr>
+            <tr>
+                <td colspan="2">Eva</td>
+                <td>Jackson</td>
+                <td>94</td>
+            </tr>
+            <tr>
+                <td>This 2 columns</td>
+                <td>this belong up column</td>
+                <td>This 1 column</td>
+                <td>This 1 columns</td>
+            </tr>
+        </table>
+        <hr style="border: 1px solid black;" >
+        <hr style='border: 1px solid purple'>
+
+        <h2> Table Will show Rowspan </h2>
+        <table>
+            <tr>
+                <th>Name:</th>
+                <td>Bill Gates</td>
+            </tr>
+            <tr>
+                <th rowspan="2">
+                    Telephone: <br><br>
+                    if you want like this, just use rowspan attribute
+                </th>
+                <td>55577854</td>
+            </tr>
+            <tr>
+                <td>55577855</td>
+            </tr>
+        </table>
+
+        <h2>HTML Table - Adding a Caption</h2>
+        <table>
+            <caption>
+                Monthly savings <br>
+                this is caption tag <br>
+                and the caption must be inserted immediately after table tag
+            </caption>
+            <tr>
+                <th>Month</th>
+                <th>Savings</th>
+            </tr>
+            <tr>
+                <td>January</td>
+                <td>$100</td>
+            </tr>
+            <tr>
+                <td>February</td>
+                <td>$50</td>
+            </tr>
+        </table>
+        <hr style="border: 1px solid red;">
+        <hr style='border: 1px solid palevioletred'>
+
+        <table id='t01''>
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>Eve</td>
+                <td>Jackson</td>
+                <td>94</td>
+            </tr>
+            <tr>
+                <td>Eve</td>
+                <td>Jackson</td>
+                <td>94</td>
+            </tr>
+            <tr>
+                <td>Eve</td>
+                <td>Jackson</td>
+                <td>94</td>
+            </tr>
+            <tr>
+                <td>Eve</td>
+                <td>Jackson</td>
+                <td>94</td>
+            </tr>
+        </table>
+
+    </body>
+</html>
