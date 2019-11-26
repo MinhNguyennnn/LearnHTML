@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Learn JavaScript</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h2>Use JavaScript to changes text</h2>
+        <p>this examble when you click a button, the text into html element tag will change</p>
+        <p id='demo'>I'll change when you click on button</p>
+        <button onclick="changeText()">Click Me</button>
+        <button onclick="changeStyle()">click me if you want beautyfull text</button>
+    </body>
+    <script>
+        function changeText (){
+            document.getElementById('demo').innerHTML = 'I want to fuck you';
+        }
+
+        function changeStyle (){
+            document.getElementById('demo').style.fontSize = '50px';
+            document.getElementById('demo').style.color = 'red';
+            document.getElementById('demo').style.background = 'orange';
+        }
+    </script>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Re-size image</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h2>Show different images depending on browser width</h2>
+        <p>re-size the browser width and the image will change at 600px and 1500px</p>
+        
+        <picture>
+            <source srcset="img/img_smallflower.jpg" media="(max-width: 600px)">
+            <source srcset="img/img_flowers.jpg" media="(max-width: 1500px)">
+            <source srcset="img/flowers.jpg">
+            <img src="img/img_flowers.jpg" alt='Flowers' style='width: auto;'>
+        </picture>
+    </body>
+</html>
