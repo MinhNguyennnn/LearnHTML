@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Text input</title>
+        <meta charset="UTF-8"/>
+    </head>
+
+    <body>
+        <h2>Text Input</h2>
+        <form>
+            First Name: <br>
+            <input type="text" name="firstname" />
+            <br>
+            Last Name: <br>
+            <input type="text" name="lastname" />
+        </form>
+        <p>Note that the form itself is not visible.</p>
+        <P>Also note that the default width of a text input field is 20 character.</P>
+
+        <h2>Radio Button Input</h2>
+        <form>
+            <input type="radio" name="gender" value="male" checked /> Male <br>
+            <input type="radio" name="gender" value="female" /> Female <br>
+            <input type="radio" name="gender" value="other" /> Other
+        </form>
+
+        <h2>The Submit Button</h2>
+        <form action="/Form/testSubmitForm.html" target="_blank">
+            First Name: <br>
+            <input type="text" name="firstname" value="Mickey" /> <br>
+            Last Name: <br>
+            <input type="text" name="lastname" value="Mouse" /> <br>
+            <input type="submit" value="Submit" />
+        </form>
+    </body>
+</html>
