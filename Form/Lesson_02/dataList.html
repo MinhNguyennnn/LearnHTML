@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Data List</title>
+        <meta charset="UTF-8" />
+    </head>
+    <body>
+        <h2>The datalist Element</h2>
+        <p>The datalist element specifies a list of Pre-defined options for an input element</p>
+
+        <form>
+            <input list="browsers" name="browser">
+            <datalist id="browsers">
+                <option value="Internet explorer"></option>
+                <option value="Firefox"></option>
+                <option value="Chrome"></option>
+                <option value="Operamini"></option>
+                <option value="Safari"></option>
+            </datalist>
+            <input type="submit" value="submit"/>
+        </form>
+        <br>
+        <p><b>Note:</b> The datalist tag is not supported in Safari or IE9 (and earlier).</p>
+
+        <br>
+        <hr style="color: orange;">
+        <h2>Practice</h2>
+
+        <form>
+            <input list="books" name="book" />
+            <datalist id="books">
+                <option value="cô gái đến từ hôm qua"></option>
+                <option value="Có chàng trai viết trên cây"></option>
+                <option value="Nói nhiều làm gì ?"></option>
+                <option value="Ta đi qua đời nhau"></option>
+            </datalist>
+            <input type="submit" value="submit" />
+        </form>
+    </body>
+</html>
